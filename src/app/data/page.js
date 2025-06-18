@@ -5,7 +5,7 @@ export const revalidate = 60;
 export default async function DataPage() {
     //外部APIから投稿データを取得（例: jsonplaceholder）
     const res = await fetch(
-        "https://jsonplaceholder.typicode.com/posts?_limit=5"
+        "https://jsonplaceholder.typicode.com/posts?_limit=3"
     );
 
     if (!res.ok) {
